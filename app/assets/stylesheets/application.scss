@@ -1,0 +1,13 @@
+// `@import` is a utility that is part of SASS. It allows
+// to load CSS modules like `require` for Node JS modules.
+// Now that this file has been converted into a SCSS files,
+// `@import` must be used instead of //*= require to load
+// the contents of a file. You can't load an entire directory.
+// You'll have to manually import every single SCSS file
+// you create.
+
+// The following import loads the SCSS from the
+// "bootstrap" gem.
+
+@import "bootstrap";
+@import "main";

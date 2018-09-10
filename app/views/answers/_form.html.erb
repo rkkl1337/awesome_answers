@@ -1,0 +1,17 @@
+<%= form_for [@question, @answer] do |f| %>
+  <% if @answer.errors.present? %>
+    <p>
+      <%= @answer.errors.full_messages.join(", ") %>
+    </p>
+  <% end %>
+
+  <div>
+    <%= f.text_area(
+      :body,
+      cols: 60,
+      rows: 5,
+      placeholder: "What are your thoughts?"
+    ) %> 
+  </div>
+  <%= f.submit "Submit" %>
+<% end %>
